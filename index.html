@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <title>Sweet Memory</title>    
+        <link rel="stylesheet" href="style.css">
+        
+       
+    </head>
+    <body>        
+        
+        <nav>            
+            <h1 class="header">Our Journey</h1>                    
+            <ul class="topnav" id="dropdownClick">
+                <li><a>Home</a></li>
+                <li><a>Travels</a></li>
+                <li><a>weekends</a></li>
+                <li><a>buddIES</a>
+                    <div class="dropdownContent buddies">
+                        <a href="#"><img class='buddiesImg' src="smallBrother.JPG">細佬</a>
+                        <a href="#"><img class='buddiesImg' src="snoodo.JPG">MAK 脾</a>
+                        <a href="#"><img class='buddiesImg' src="GradPoala.JPG">畢業樹熊</a>
+                        <a href="#">飛飛</a>
+                    </div>
+                </li>                
+                <li class="dropdownicon" onclick="dropdownmenu()"><a href="javasript:void(0)">&#9776</a></li>
+            </ul>
+        </nav>               
+        <div class="row bearrow">
+            <div class="col-5">   
+                <div class="left-col">
+                    <img src="%E4%B8%8B%E8%BC%89.jpg" class="borderImg">
+                </div>
+            </div>
+            <div class="col-7">    
+                <div class="right-col">
+                    <h2 class="travel"><a href="">2016 Tokyo - <i>Our First Travel</i></a></h2>
+                    <h2 class="travel"><a href="">2017 Osaka - <i>Lovely Japanese costume, Lovely HK couple</i> </a></h2>
+                   <h2 class="travel"><a href="">2017 Macau - <i>唔輸當贏</i></a></h2>    
+                </div>
+            </div>
+        
+        </div>
+        <hr>  
+        <div class="row">
+            <!--<div class="col-4"></div>-->
+            <div class="Song"><iframe class="themeSong" src="https://www.youtube.com/embed/ULcmgv837MQ"></iframe>
+            </div>
+            <!--<div class="col-4"></div>-->
+        </div>
+         <script>
+            function dropdownmenu()
+            {
+                var x = document.getElementById("dropdownClick");
+                if(x.className=== "topnav"){
+                    x.className+=" responsive";
+                }
+                else{
+                    x.className="topnav";
+                } 
+                    
+            }
+        </script>
+    </body>
+    
+</html>

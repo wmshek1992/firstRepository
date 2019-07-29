@@ -1,0 +1,237 @@
+/*######### Defaults ##############*/
+nav, header, footer {
+    display: block;
+}
+body{
+    background-image: url(%E7%9B%B8%E7%89%87%205-11-2016%20%E4%B8%8B%E5%8D%881%2043%2052.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+}
+
+/*######### Nav Bar ##############*/
+nav{
+    width:100%;
+    margin: 0;    
+    box-shadow: 3px  3px;
+    
+    background-size:cover;
+}
+nav ul {
+    background: linear-gradient(darkviolet,#1d0003);
+    background-color: darkviolet;
+    overflow: hidden; /*mobile - no scrolling */
+    margin: 0;
+    padding:0;
+}
+ul.topnav li {
+    list-style: none;
+    float: left;       
+}
+
+ul.topnav li:hover .dropdownContent {
+    display: block;
+    float: left;       
+}
+
+
+ul.topnav li .dropdownContent {
+    display: none;
+    float: left;       
+    position : absolute;
+    background-color:darkkhaki;
+    font-style: oblique;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+ul.topnav li .dropdownContent a{
+  
+    float: left;  
+    clear: both;
+    
+}
+
+img.buddiesImg
+{
+    width: 30px;
+    height: 30px;
+    transform: rotate(90deg);
+    padding:0px 5px;
+    
+}
+
+
+ul.topnav li.topnav-right {
+    list-style: none;
+    float: right;
+}
+
+ul.topnav li a {
+    display :block;
+    text-decoration: none;
+    min-height: 16px;
+    padding: 14px;
+    text-align: center;
+    text-transform: uppercase;
+    color:  blanchedalmond;
+    
+}
+
+
+ul.topnav li a:hover {
+    
+    color: white;
+    
+}
+
+
+
+
+ul.topnav li.dropdownicon {
+    display:none;
+}
+
+h1.header {
+    color:blanchedalmond; 
+    text-align: center;
+    text-shadow: 2px 1px 1px black;
+    font-family:serif;
+    font-size: 40px;
+}
+
+
+
+.container {
+    background-color: darkviolet;
+    box-shadow: 3px 5px 5px;
+    height:75px;
+    text-align: center;    
+}
+
+div.left-col
+{
+    margin-right: 20%;
+    
+}
+
+
+
+.borderImg{
+    border-radius:50%;
+    width:200px;
+    border: 2px solid #ddd;
+    padding: 2px;
+    opacity: 1;
+    display: block;
+    margin: auto;
+    max-width: 100%;
+}
+
+h2.travel a{
+    color: blanchedalmond;   
+    text-shadow: 2px 0px 1px black;
+}
+h2.travel a:hover{
+     color:cornflowerblue;
+}
+
+.row {
+    display: flex;
+    width: 100%;
+    flex-wrap:wrap;
+    align-items: center;
+}
+
+.row.bearrow{
+    margin-top:10px;
+}
+
+.row::after{
+    display: block;
+    clear:both;
+    content:"";    
+}
+
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+
+div.col-4{
+    align-items: center;
+    float: right;
+}
+
+.themeSong{
+    border-radius: 10px;
+}
+
+div.Song{
+    margin-left: auto;
+    margin-right: auto;
+}
+/*################ Custom Styles ##############*/
+
+
+
+
+
+/*################ Mobile ##############*/
+
+@media screen and (max-width: 680px){
+    ul.topnav li:not(:nth-child(1)){
+        display:none;
+    }
+    
+    ul.topnav.responsive li.dropdownicon {
+        position: absolute;
+        top:0;
+        right:0;
+        
+    }
+    
+    
+    ul.topnav li.dropdownicon{
+        display: block;
+        float: right;
+    }
+    
+    ul.topnav.responsive{
+       position:relative;        
+    }
+    
+    ul.topnav.responsive li{
+        display: inline;
+        float:none;
+    }
+    
+    ul.topnav.responsive li a {
+        display:block;
+        text-align: left;
+    }
+    
+    .col-5{
+        width:100%;        
+    }
+    .col-7{
+        width:100%;        
+    }
+    div.left-col , div.right-col {
+        margin:15px;
+    }
+    div.right-col h2.travel {
+                text-align: center;
+    }
+    
+    
+    
+}
